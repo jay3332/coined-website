@@ -1,0 +1,57 @@
+@keyframes fade-move-down {
+  0% {
+    transform: translate(0, -30px);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  70%, 100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+
+#_down {
+  position: absolute;
+  background-image: url('/icons/chevron-down.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 45px;
+  width: 65px;
+  margin-left: -22.5px;
+  line-height: 60px;
+  left: 50%;
+  bottom: 30px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  animation: fade-move-down 5s ease-in-out infinite;
+  transition: all 0.5s ease;
+}
+
+#_down:hover {
+  filter: drop-shadow(0 0 3px white);
+}
+
+#mesh-gradient {
+  top: 0;
+  left: 0;
+  display: flex;
+  position: absolute;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  flex-grow: 1;
+  z-index: -1;
+  --gradient-color-1: theme('colors.accent.DEFAULT');
+  --gradient-color-2: theme('colors.accent.100');
+  --gradient-color-3: theme('colors.tertiary.DEFAULT');
+  --gradient-color-4: theme('colors.tertiary.700');
+}
+
+/* noinspection ALL */
+#banner {
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
