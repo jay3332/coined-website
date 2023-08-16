@@ -19,9 +19,4 @@ export default defineConfig({
       extensions: [".mdx", ".md"],
     }),
   ],
-  build: {
-    rollupOptions: {
-      external: ["solid-jsx", "solid-jsx/jsx-runtime"]
-    }
-  }
 });
