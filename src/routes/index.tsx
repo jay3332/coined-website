@@ -53,10 +53,10 @@ export default function Home() {
       </div>
 
       <div class="m-auto w-[min(1400px,90vw)]">
-        <div class="flex items-center justify-between p-8 m-8 mobile:flex-col">
+        <div id="wip" class="flex items-center justify-between p-8 m-8 mobile:flex-col">
           <img src="/coined.png" class="w-56 h-56" alt="Coined Icon" />
           <div class="mobile:text-center">
-            <h2 id="wip" class="font-title font-bold text-4xl">Work in Progress</h2>
+            <h2 class="font-title font-bold text-4xl">Work in Progress</h2>
             <p class="py-2">This section is a work in progress. But it'll look FIRE when it's done.</p>
           </div>
         </div>
