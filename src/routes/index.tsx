@@ -67,7 +67,7 @@ export default function Home() {
         <div class="flex justify-center m-6">
           <div class="flex relative group">
             <div
-              class="absolute inset-0 bg-gradient-to-r from-accent to-secondary rounded-md opacity-50 blur
+              class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-700 rounded-md opacity-50 blur
                 transition-all duration-200 group-hover:blur-lg group-hover:opacity-70 will-change-[filter]"
             />
             <a
