@@ -12,9 +12,7 @@ import {
   Title,
 } from "solid-start";
 import "./root.css";
-import NavBar from "~/components/NavBar";
 import Footer from "~/components/Footer";
-import {useLocation} from "@solidjs/router";
 
 export default function Root() {
   return (
@@ -24,15 +22,15 @@ export default function Root() {
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Body class="bg-gray-900">
+      <Body class="bg-gray-950">
         <Suspense>
           <ErrorBoundary>
             <Routes>
               <FileRoutes />
             </Routes>
+            <Footer />
           </ErrorBoundary>
         </Suspense>
-        <Footer />
         <Scripts />
       </Body>
     </Html>

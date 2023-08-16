@@ -18,15 +18,43 @@ const LINKS: Links = [
     href: '/',
   },
   {
+    name: 'Commands',
+    href: '/commands',
+  },
+  {
+    name: 'Dashboard',
+    href: '/dashboard',
+  },
+  {
     name: 'More',
     links: [
       {
-        name: 'Terms of Service',
-        href: '/terms',
+        name: 'Legal',
+        links: [
+          {
+            name: 'Terms of Service',
+            href: '/terms',
+          },
+          {
+            name: 'Privacy Policy',
+            href: '/privacy',
+          },
+        ]
       },
       {
-        name: 'Privacy Policy',
-        href: '/privacy',
+        name: 'Links',
+        links: [
+          {
+            name: 'Add Coined',
+            href: (
+              'https://discord.com/oauth2/authorize?client_id=753017377922482248&scope=bot+applications.commands&permissions=414531833025'
+            ),
+          },
+          {
+            name: 'Support Server',
+            href: 'https://discord.gg/BjzrQZjFwk',
+          }
+        ]
       }
     ]
   }
@@ -85,7 +113,7 @@ export default function NavBar({ transparent = false }: { transparent?: boolean 
         </div>
         <A class="btn btn-ghost flex gap-x-2" href="/">
           <img src="/coined.png" class="w-12 h-12" alt="Coined Icon" />
-          <span class="normal-case text-xl">Coined</span>
+          <span class="normal-case text-xl hidden lg:flex">Coined</span>
         </A>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -95,7 +123,7 @@ export default function NavBar({ transparent = false }: { transparent?: boolean 
       </div>
       <div class="navbar-end gap-x-2">
         <a class="btn btn-primary">Log In</a>
-        <a class="btn btn-accent" href={COINED_INVITE}>Invite Coined</a>
+        <a class="btn btn-accent hidden lg:flex" href={COINED_INVITE}>Add Coined</a>
       </div>
     </div>
   )

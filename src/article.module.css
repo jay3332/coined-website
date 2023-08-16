@@ -1,0 +1,32 @@
+.main {
+  @apply flex justify-center m-auto pt-8 pb-16;
+}
+
+.main div {
+  width: min(90vw, 1024px);
+}
+
+.main h1 { @apply text-4xl pt-8 pb-6 }
+.main h2 { @apply text-3xl pt-7 pb-5 }
+.main h3 { @apply text-2xl py-4 }
+.main h4 { @apply text-xl py-3 }
+.main h5 { @apply text-lg py-2 }
+.main h6 { @apply text-base py-1.5 }
+.main p { @apply py-1 }
+
+.main :is(h1, h2, h3, h4, h5, h6) {
+  @apply font-bold font-title;
+}
+
+.main ul {
+  @apply list-inside py-2;
+  list-style-type: initial !important;
+}
+
+.main ol {
+  @apply list-decimal list-inside py-2;
+}
+
+.main :is(ol, ul) > li {
+  @apply px-2;
+}

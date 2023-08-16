@@ -1,42 +1,47 @@
 import {A} from "solid-start";
+import {COINED_INVITE} from "~/routes";
 
 const SECTIONS = [
   {
-    title: 'About',
+    title: 'Links',
     links: [
       {
         name: 'Homepage',
         href: '/',
       },
       {
-        name: 'Status',
-        href: 'https://status.adapt.chat',
+        name: 'Add Coined',
+        href: COINED_INVITE,
       },
+      {
+        name: 'Community',
+        href: 'https://discord.gg/BjzrQZjFwk',
+      }
     ],
   },
   {
-    title: 'App',
+    title: 'Manage',
     links: [
       {
-        name: 'Download',
-        href: '/download',
+        name: 'Profile',
+        href: '/profile',
       },
       {
-        name: 'Web App',
-        href: 'https://app.adapt.chat',
+        name: 'Dashboard',
+        href: '/guilds',
       },
     ]
   },
   {
-    title: 'Developers',
+    title: 'Vote for Us',
     links: [
       {
-        name: 'GitHub',
-        href: 'https://github.com/AdaptChat',
+        name: 'Top.gg',
+        href: 'https://top.gg/bot/753017377922482248',
       },
       {
-        name: 'API Documentation',
-        href: 'https://api.adapt.chat/docs',
+        name: 'Discord Bot List',
+        href: 'https://discordbotlist.com/bots/coined',
       },
     ]
   },
@@ -79,10 +84,10 @@ export default function Footer() {
         ))}
       </div>
       <div class="p-4 flex flex-col items-center md:flex-row">
-        <div class="flex gap-x-2 items-center">
+        <A href="/" class="flex gap-x-2 items-center">
           <img src="/coined.png" class="w-14 h-14" alt="Coined Icon" />
           <span class="normal-case text-2xl font-title font-bold">Coined</span>
-        </div>
+        </A>
         <div class="mx-5 my-1 border-2 self-stretch rounded opacity-20 hidden md:flex" />
         <div class="flex items-center gap-4">
           <SocialIcon href="https://discord.gg/BjzrQZjFwk" src="/icons/discord.svg" alt="Discord" />

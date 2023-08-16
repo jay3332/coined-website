@@ -120,3 +120,7 @@ html {
 body {
   @apply hide-scrollbar;
 }
+
+main {
+  @apply bg-gray-900;
+}
