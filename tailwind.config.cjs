@@ -100,6 +100,7 @@ const config = {
   },
   plugins: [
     require('daisyui'),
+    require('@tailwindcss/typography'),
     plugin(({ addComponents, addVariant }) => {
       addComponents({
         '.hide-scrollbar': {
