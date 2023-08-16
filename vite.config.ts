@@ -10,6 +10,7 @@ export default defineConfig({
       // @ts-ignore
       ...mdx({
         jsxImportSource: "solid-jsx",
+        providerImportSource: "solid-jsx",
         rehypePlugins: [rehypeSlug],
       }),
       enforce: "pre",
