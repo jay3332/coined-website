@@ -23,7 +23,7 @@
     "classnames": "^2.3.2",
     "daisyui": "^3.5.1",
     "solid-js": "^1.7.11",
-    "solid-jsx": "github.com/high1/solid-jsx#main",
+    "solid-jsx": "^1.1.4",
     "solid-start": "^0.3.3",
     "whatamesh": "^0.0.1"
   }
