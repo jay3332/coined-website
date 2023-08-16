@@ -41,7 +41,7 @@ export default function Home() {
               <a class="btn btn-accent" href={COINED_INVITE}>Add Coined</a>
               <a class="btn btn-primary" href="https://discord.gg/BjzrQZjFwk">Join our Community</a>
             </div>
-            <p class="text-lg mx-4 my-2">
+            <p class="text-lg mx-4 my-2 mobile:text-center">
               Still not convinced?&nbsp;
               <a class="font-medium underline underline-offset-2 hover:text-base-content transition" href="#wip">
                 Learn More
@@ -55,7 +55,7 @@ export default function Home() {
       <div class="m-auto w-[min(1400px,90vw)]">
         <div class="flex items-center justify-between p-8 m-8 mobile:flex-col">
           <img src="/coined.png" class="w-56 h-56" alt="Coined Icon" />
-          <div>
+          <div class="mobile:text-center">
             <h2 id="wip" class="font-title font-bold text-4xl">Work in Progress</h2>
             <p class="py-2">This section is a work in progress. But it'll look FIRE when it's done.</p>
           </div>
