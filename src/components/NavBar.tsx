@@ -85,7 +85,7 @@ function HorizontalLink({ link, transparent }: { link: Links[number], transparen
       ) : (
         <details>
           <summary>{link.name}</summary>
-          <ul class={classNames('p-2', { 'bg-gray-900': !transparent })}>
+          <ul class="p-2 bg-gray-900">
             {link.links.map(link => <HorizontalLink link={link} transparent={transparent} />)}
           </ul>
         </details>
@@ -104,16 +104,13 @@ export default function NavBar({ transparent = false }: { transparent?: boolean 
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabIndex={0} class={classNames(
-            "menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52",
-            { 'bg-gray-900': !transparent }
-          )}>
+          <ul tabIndex={0} class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 bg-gray-900">
             {LINKS.map(link => <VerticalLink link={link} />)}
           </ul>
         </div>
         <A class="btn btn-ghost flex gap-x-2" href="/">
           <img src="/coined.png" class="w-12 h-12" alt="Coined Icon" />
-          <span class="normal-case text-xl hidden lg:flex">Coined</span>
+          <span class="normal-case text-xl font-title hidden lg:flex">Coined</span>
         </A>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -123,7 +120,7 @@ export default function NavBar({ transparent = false }: { transparent?: boolean 
       </div>
       <div class="navbar-end gap-x-2">
         <a class="btn btn-primary">Log In</a>
-        <a class="btn btn-accent hidden lg:flex" href={COINED_INVITE}>Add Coined</a>
+        <a class="btn btn-accent btn-outline hidden lg:flex" href={COINED_INVITE}>Add Coined</a>
       </div>
     </div>
   )

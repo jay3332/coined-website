@@ -8,19 +8,21 @@
   "type": "module",
   "devDependencies": {
     "@mdx-js/rollup": "^2.1.5",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/aos": "^3.0.5",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.26",
     "rehype-slug": "^5.1.0",
     "solid-start-cloudflare-pages": "^0.3.3",
     "solid-start-node": "^0.3.0",
     "tailwindcss": "^3.3.3",
-    "@tailwindcss/typography": "^0.5.9",
     "typescript": "^4.9.5",
     "vite": "^4.4.6"
   },
   "dependencies": {
     "@solidjs/meta": "^0.28.5",
     "@solidjs/router": "^0.8.2",
+    "aos": "^3.0.0-beta.6",
     "classnames": "^2.3.2",
     "daisyui": "^3.5.1",
     "solid-js": "^1.7.11",

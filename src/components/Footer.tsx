@@ -94,7 +94,7 @@ export default function Footer() {
           <SocialIcon href="https://github.com/jay3332" src="/icons/github.svg" alt="Discord" />
         </div>
       </div>
-      <p class="text-white text-opacity-50">
+      <p class="text-white text-opacity-50 text-center">
         Copyright &copy; 2023-present jay3332
       </p>
     </footer>
