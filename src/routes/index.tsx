@@ -12,7 +12,7 @@ export const COINED_INVITE = (
 
 function Feature({ id, title, children, icon, reverse = false }: ParentProps<{ id: string, title: string, icon: string, reverse?: boolean }>) {
   return (
-    <div class="m-auto w-[min(1400px,90vw)]" data-aos={reverse ? "fade-left" : "fade-right"}>
+    <div class="m-auto w-[min(1400px,90vw)]" data-aos="fade-up">
       <div id={id} class={classNames(
         "flex items-center justify-between p-8 mobile:p-4 m-4 gap-x-4 mobile:mx-0 mobile:flex-col",
         {"flex-row-reverse": reverse},
