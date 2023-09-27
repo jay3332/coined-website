@@ -92,7 +92,7 @@ export default function Home() {
         id="part2"
         class="flex flex-col items-center justify-center mt-16 p-8 bg-accent-400/5 border-2 border-accent-700/30
           rounded-lg max-w-[min(1200px,90vw)] m-auto"
-        data-aos="fade-up"
+        data-aos="zoom-out"
       >
         <h2 class="font-title text-4xl mobile:text-3xl text-center mb-8">
           Join a <span class="text-accent">global economy system</span>
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 class="text-center font-title font-black text-5xl pt-16 pb-2">Features</h2>
+      <h2 class="text-center font-title font-black text-5xl pt-16 pb-2" data-aos="fade-up">Features</h2>
       <Feature id="wip" title="Work in Progress" icon="/coined.png">
         This section is a work in progress. But it'll look FIRE when it's done.
       </Feature>

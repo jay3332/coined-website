@@ -64,7 +64,7 @@ function VerticalLink({ link }: { link: Links[number] }) {
   return (
     <li>
       {"href" in link ? (
-        <A class="!bg-base-content !bg-opacity-0 hover:!bg-opacity-10" href={link.href}>{link.name}</A>
+        <A class="!bg-base-content !bg-opacity-0 hover:!bg-opacity-10 py-2" href={link.href}>{link.name}</A>
       ) : (
         <>
           <a>{link.name}</a>
@@ -77,7 +77,7 @@ function VerticalLink({ link }: { link: Links[number] }) {
   )
 }
 
-function HorizontalLink({ link, transparent }: { link: Links[number], transparent: boolean }) {
+function HorizontalLink({ link }: { link: Links[number] }) {
   return (
     <li>
       {"href" in link ? (
@@ -85,8 +85,8 @@ function HorizontalLink({ link, transparent }: { link: Links[number], transparen
       ) : (
         <details>
           <summary>{link.name}</summary>
-          <ul class="p-2 bg-gray-900">
-            {link.links.map(link => <HorizontalLink link={link} transparent={transparent} />)}
+          <ul class="p-2 bg-gray-950 nav-menu">
+            {link.links.map(link => <HorizontalLink link={link} />)}
           </ul>
         </details>
       )}
@@ -115,7 +115,7 @@ export default function NavBar({ transparent = false }: { transparent?: boolean 
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          {LINKS.map(link => <HorizontalLink link={link} transparent={transparent} />)}
+          {LINKS.map(link => <HorizontalLink link={link} />)}
         </ul>
       </div>
       <div class="navbar-end gap-x-2">
